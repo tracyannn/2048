@@ -105,7 +105,6 @@ export default class Game {
                     this.gameState.board[i-1] *= 2 
                     if (this.gameState.board[i-1] == 2048) {
                         this.gameState.won = true
-                        //console.log("you win!")
                         this.win_listeners.forEach(listener => listener(this.gameState))
                     }
                     this.gameState.board[j-1] = 0
@@ -143,7 +142,6 @@ export default class Game {
                     this.gameState.board[i-1] *= 2 
                     if (this.gameState.board[i-1] == 2048) {
                         this.gameState.won = true
-                        //console.log("you win!")
                         this.win_listeners.forEach(listener => listener(this.gameState))
                     }
                     this.gameState.board[j-1] = 0
@@ -181,7 +179,6 @@ export default class Game {
                     this.gameState.board[i-1] *= 2 
                     if (this.gameState.board[i-1] == 2048) {
                         this.gameState.won = true
-                        //console.log("you win!")
                         this.win_listeners.forEach(listener => listener(this.gameState))
                     }
                     this.gameState.board[j-1] = 0
@@ -219,7 +216,6 @@ export default class Game {
                     this.gameState.board[i-1] *= 2 
                     if (this.gameState.board[i-1] == 2048) {
                         this.gameState.won = true
-                        //console.log("you win!")
                         this.win_listeners.forEach(listener => listener(this.gameState))
                     }
                     this.gameState.board[j-1] = 0
@@ -269,7 +265,6 @@ export default class Game {
                 
             }
             counter++
-            //console.log(x+1)
             if (tile > 9) {
                 this.gameState.board[x] = 2
             } else {
